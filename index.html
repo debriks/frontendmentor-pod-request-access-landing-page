@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+    <title>Frontend Mentor | Pod request access landing page</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <img src="/images/desktop/logo.svg" alt="pod logo" />
+      </header>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Publish your podcasts<span> everywhere.</span></h1>
+          <p>
+            Upload your audio to Pod with a single click. We’ll then distribute
+            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
+            Casts and more!
+          </p>
+        </div>
+        <section class="partners">
+          <div>
+            <img src="/images/desktop/spotify.svg" alt="spotify logo" />
+          </div>
+          <div>
+            <img
+              src="/images/desktop/apple-podcast.svg"
+              alt="apple podcast logo"
+            />
+          </div>
+          <div>
+            <img
+              src="/images/desktop/google-podcasts.svg"
+              alt="google podcasts logo"
+            />
+          </div>
+          <div>
+            <img
+              src="/images/desktop/pocket-casts.svg"
+              alt="pocket casts logo"
+            />
+          </div>
+        </section>
+        <form action="/" id="form">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            autocomplete="off"
+          />
+          <small id="emailWarning" class="warning"
+            >Oops! Please check your email</small
+          >
+          <button id="requestBtn" aria-label="Submit" class="btn request-btn">
+            Request access
+          </button>
+        </form>
+      </section>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>

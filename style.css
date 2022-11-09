@@ -160,6 +160,7 @@ form {
 
 input,
 button {
+  border: 1px solid var(--black);
   padding: 0.625rem 2.185rem;
   border-radius: 625rem;
   border: none;

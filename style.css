@@ -1,82 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap");
 :root {
-  --fluo-green: hsl(157, 74%, 62%);
-  --fluo-green-hover: hsl(157, 62%, 75%);
+  /* COLORS */
+  --clr-fluo-green: hsl(157, 74%, 62%);
+  --clr-fluo-green-hover: hsl(157, 62%, 75%);
 
-  --red-warning: hsl(0, 99%, 55%);
+  --clr-red-warning: hsl(0, 99%, 55%);
 
-  --dark-grey: hsl(225, 26%, 23%);
-  --black: hsl(224, 35%, 11%);
-  --white: hsl(0, 0%, 100%);
-  --bluish-gray: hsl(225, 21%, 45%);
-  --light-bluish-gray: hsl(225, 40%, 83%);
+  --clr-dark-grey: hsl(225, 26%, 23%);
+  --clr-black: hsl(224, 35%, 11%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-bluish-gray: hsl(225, 21%, 45%);
+  --clr-light-bluish-gray: hsl(225, 40%, 83%);
 
+  /* TYPOGRAPHY */
   --ff-body: "Chivo", sans-serif;
 
+  /* FONT SIZES */
   --fs-body-sm: 15px;
-  --lh-body-sm: 25px;
-
   --fs-body-normal: 18px;
+
+  /* LINE HEIGHTS */
+  --lh-body-sm: 25px;
   --lh-body-normal: 28px;
 
+  /* FONT WEIGHTS */
   --fw-light: 300;
   --fw-bold: 700;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: 0;
-}
-
-html {
-  font-size: 100%;
-  box-sizing: border-box;
-  height: 100%;
-}
-
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  color: inherit;
-}
-
-img,
-picture {
-  max-width: 100%;
-  display: block;
-  line-height: 0;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-  color: inherit;
-}
-
-button,
-input {
-  outline: none;
-  border: none;
-}
-
-h1,
-h2,
-h3,
-p {
-  padding: 0;
-  margin: 0;
 }
 
 body {
@@ -90,7 +39,7 @@ body {
   font-size: var(--fs-body-sm);
   font-weight: var(--fw-light);
   line-height: var(--lh-body-sm);
-  background-color: var(--black);
+  background-color: var(--clr-black);
   padding: 1rem;
   min-height: 100vh;
   overflow: hidden;
@@ -125,17 +74,17 @@ body::after {
   font-size: 1.625rem;
   line-height: 2.375rem;
   font-weight: var(--fw-light);
-  color: var(--fluo-green);
+  color: var(--clr-fluo-green);
   text-transform: uppercase;
   margin-top: 3.125rem;
 }
 
 .hero h1 span {
-  color: var(--white);
+  color: var(--clr-white);
 }
 
 .hero p {
-  color: var(--light-bluish-gray);
+  color: var(--clr-light-bluish-gray);
   padding: 1rem;
 }
 
@@ -160,35 +109,35 @@ form {
 
 input,
 button {
-  border: 1px solid var(--black);
+  border: 1px solid var(--clr-black);
   padding: 0.625rem 2.185rem;
   border-radius: 625rem;
   font-weight: var(--fw-bold);
 }
 
 input {
-  background-color: var(--dark-grey);
-  color: var(--light-bluish-gray);
+  background-color: var(--clr-dark-grey);
+  color: var(--clr-light-bluish-gray);
   margin-bottom: 1rem;
 }
 
 input:focus {
-  border: 1px solid var(--fluo-green);
-  color: var(--white);
+  border: 1px solid var(--clr-fluo-green);
+  color: var(--clr-white);
 }
 
 .active {
-  border: 1px solid var(--red-warning);
+  border: 1px solid var(--clr-red-warning);
 }
 
 .request-btn {
-  background-color: var(--fluo-green);
+  background-color: var(--clr-fluo-green);
   transition: ease-in-out 0.2s;
   cursor: pointer;
 }
 
 .request-btn:hover {
-  background-color: var(--fluo-green-hover);
+  background-color: var(--clr-fluo-green-hover);
 }
 
 .warning {
@@ -197,7 +146,7 @@ input:focus {
   top: -1.565rem;
   margin: 0;
   visibility: hidden;
-  color: var(--red-warning);
+  color: var(--clr-red-warning);
   font-weight: var(--fw-bold);
 }
 
@@ -228,7 +177,7 @@ input:focus {
   }
 
   .hero {
-    background-color: var(--black);
+    background-color: var(--clr-black);
     width: 41.56rem;
     padding: 5rem 1.875rem 0 1.565rem;
     text-align: start;
